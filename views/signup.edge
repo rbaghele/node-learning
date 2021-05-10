@@ -1,0 +1,24 @@
+@layout('layouts.app')
+
+@section('content')
+  <div class="form-wrapper">
+    @if(error)
+      {{error}}
+    @endif
+    <form action="/signup" method="POST">
+      <div class="form-group">
+        <label for="exampleInputUserName">Username:</label>
+        <input name="username" type="text" class="form-control" id="exampleInputUserName" aria-describedby="emailHelp" placeholder="Enter user name">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email:</label>
+        <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password:</label>
+        <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+@endsection

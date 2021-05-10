@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+  <div class="my-container">
+    <div class="header">
+      <div class="logo">NodeJs</div>
+      <div class="links">
+        @if(auth)
+          <a href="/logout">Logout</a>  
+        @else
+          <a href="/login">Login</a>
+          <a href="/signup">Signup</a>  
+        @endif
+      </div>
+    </div>
+    <div class="page-body">
+      @!section('content')
+    </div>
+  </div>
+</body>
+</html>

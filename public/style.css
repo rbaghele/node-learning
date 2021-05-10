@@ -1,0 +1,26 @@
+.my-container {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid grey;
+}
+.header {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  background: lightgray;
+  padding: 15px;
+  color: white;
+}
+.links {
+  text-align: right;
+}
+.links a {
+  margin-right: 15px;
+  color: white;
+}
+.page-body {
+  padding: 15px;
+}
+.form-wrapper {
+  width: 449px;
+  margin: 0 auto;
+}
